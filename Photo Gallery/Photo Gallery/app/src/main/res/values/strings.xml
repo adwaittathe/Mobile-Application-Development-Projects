@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Main Activity</string>
+    <string name="btnGo_display">Go</string>
+    <string name="txtImage_display">Search Keyword</string>
+    <string name="txtLoading_display" />
+    <string name="nextimg">Next Image</string>
+    <string name="previmg">Previous Image</string>
+    <string name="mainimg">Main Image</string>
+</resources>
