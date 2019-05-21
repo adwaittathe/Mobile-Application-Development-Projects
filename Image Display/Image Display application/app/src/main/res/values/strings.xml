@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Display Image</string>
+    <string name="btnThread_display">Load Using Thread</string>
+    <string name="btnAsync_display">Load Using AsyncTask</string>
+    <string name="img_content">Image View</string>
+</resources>
