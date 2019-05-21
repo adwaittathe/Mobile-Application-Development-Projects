@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Login</string>
+
+
+    <string name="btnLogin_display">Login</string>
+    <string name="signUp">Sign Up</string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="email">E mail</string>
+    <string name="choosePswd">Choose Password</string>
+    <string name="repeatPswd">Repeat Password</string>
+    <string name="btn_Cancel">Cancel</string>
+    <string name="btn_SignUp">Sign Up</string>
+    <string name="email_text">Email</string>
+    <string name="password">Password</string>
+    <string name="txtSendto_di">Send To:</string>
+    <string name="sub_display">Subject</string>
+    <string name="txtMesg">Message</string>
+    <string name="btnSend_dis">Send</string>
+    <string name="btnCan_d">Cancel</string>
+
+</resources>
