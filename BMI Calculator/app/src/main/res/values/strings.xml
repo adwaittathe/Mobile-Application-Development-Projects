@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">In Class 2a</string>
+    <string name="bmi_top">Body Mass Index(BMI)</string>
+    <string name="weight_top">Weight</string>
+    <string name="input_weight"></string>
+    <string name="weight_lb">lb</string>
+    <string name="height_top">Height</string>
+    <string name="height_input1"></string>
+    <string name="height_input2"></string>
+    <string name="height_feet">feet</string>
+    <string name="height_inches">inches</string>
+    <string name="bmi_button">Calculate BMI</string>
+    <string name="bmi_result">BMI result</string>
+    <string name="bmi_overweight">BMI category</string>
+</resources>
