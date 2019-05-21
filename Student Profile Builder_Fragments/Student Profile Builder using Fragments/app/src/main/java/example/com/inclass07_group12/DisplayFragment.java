@@ -1,0 +1,171 @@
+package example.com.inclass07_group12;
+
+import android.content.Context;
+import android.net.Uri;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+
+
+public class DisplayFragment extends Fragment {
+    // TODO: Rename parameter arguments, choose names that match
+    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
+
+    // TODO: Rename and change types of parameters
+    private String mParam1;
+    private String mParam2;
+
+    private IDisplayFragment mListener;
+
+    public DisplayFragment() {
+        // Required empty public constructor
+    }
+
+    /**
+     * Use this factory method to create a new instance of
+     * this fragment using the provided parameters.
+     *
+     * @param param1 Parameter 1.
+     * @param param2 Parameter 2.
+     * @return A new instance of fragment DisplayFragment.
+     */
+    // TODO: Rename and change types and number of parameters
+    public static DisplayFragment newInstance(String param1, String param2) {
+        DisplayFragment fragment = new DisplayFragment();
+        Bundle args = new Bundle();
+        args.putString(ARG_PARAM1, param1);
+        args.putString(ARG_PARAM2, param2);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+
+        Button btnEdit=(Button)getView().findViewById(R.id.btnedit);
+        btnEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                mListener.EditClick();
+            }
+        });
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        getActivity().setTitle("Display My Profile");
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        if(getArguments()!=null)
+        {
+            User user=(User)getArguments().getSerializable("user");
+            setUserdetails(user);
+        }
+        getActivity().setTitle("Display My Profile");
+        //User user = mListener.getUserdetails();
+
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
+
+        }
+
+
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+
+
+        return inflater.inflate(R.layout.fragment_display, container, false);
+    }
+
+
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        if (context instanceof IDisplayFragment) {
+            mListener = (IDisplayFragment) context;
+        } else {
+            throw new RuntimeException(context.toString()
+                    + " must implement OnFragmentInteractionListener");
+        }
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        mListener = null;
+    }
+
+    /**
+     * This interface must be implemented by activities that contain this
+     * fragment to allow an interaction in this fragment to be communicated
+     * to the activity and potentially other fragments contained in that
+     * activity.
+     * <p>
+     * See the Android Training lesson <a href=
+     * "http://developer.android.com/training/basics/fragments/communicating.html"
+     * >Communicating with Other Fragments</a> for more information.
+     */
+    public interface IDisplayFragment {
+        // TODO: Update argument type and name
+        public User getUserdetails();
+        public void EditClick();
+
+    }
+
+    public void setUserdetails(User usr)
+    {
+        final TextView txtFirst_name= (TextView) getView().findViewById(R.id.txt_firstname_result);
+        final ImageView img_avatar=(ImageView)getView().findViewById(R.id.resultImg_displayAvatar);
+        final TextView txtDepartment= (TextView) getView().findViewById(R.id.txtDept_result_display);
+        final TextView txtStdID=(TextView)getView().findViewById(R.id.txtStudentID_result);
+        txtFirst_name.setText(String.valueOf(usr.firstName) + " " + String.valueOf(usr.lastName));
+        txtDepartment.setText(String.valueOf(usr.Department));
+        txtStdID.setText(String.valueOf(usr.studentId));
+        int img_val= usr.ImageId;
+        if (img_val == 1) {
+            img_avatar.setImageResource(R.drawable.avatarf1);
+        }
+        else if(img_val==2){
+            img_avatar.setImageResource(R.drawable.avatar_f_2);
+        }
+        else if(img_val==3){
+            img_avatar.setImageResource(R.drawable.avatar_f_3);
+        }
+        else if(img_val==4){
+            img_avatar.setImageResource(R.drawable.avatar_m_1);
+        }
+        else if(img_val==5){
+            img_avatar.setImageResource(R.drawable.avatar_m_2);
+        }
+        else if(img_val==6){
+            img_avatar.setImageResource(R.drawable.avatar_m_3);
+        }
+
+    }
+}

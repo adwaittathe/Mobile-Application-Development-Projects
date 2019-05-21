@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">My Profile</string>
+    <string name="avatar_display">My Avatar</string>
+    <string name="txt_first_name" />
+    <string name="lastName_displattext" />
+    <string name="studentID_display" />
+    <string name="department_display">Department:</string>
+    <string name="btnSAVE_display">Save</string>
+    <string name="rbcs_display">CS</string>
+    <string name="rb_SIS_display">SIS</string>
+    <string name="rb_bio_display">BIO</string>
+    <string name="rb_other_display">Other</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="lastName_hint_display">Last Name</string>
+    <string name="studentid_hint_display">Student ID</string>
+    <string name="txtnameResult_display">Name :</string>
+    <string name="studentID_result_display">Student ID:</string>
+    <string name="txtDept_result_display">Department :</string>
+    <string name="btnEdit_result_display">Edit</string>
+    <string name="txtFN_display_res">FN</string>
+    <string name="stdID_res_display">SiD</string>
+    <string name="dept_result_display">Dep</string>
+    <string name="selectAvatar">Select Avatar</string>
+    <string name="displayResult">Display My Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
