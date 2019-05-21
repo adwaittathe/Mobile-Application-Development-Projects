@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "246177436713",
+    "firebase_url": "https://finalexam-578df.firebaseio.com",
+    "project_id": "finalexam-578df",
+    "storage_bucket": "finalexam-578df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246177436713:android:ac6977d0697f2669",
+        "android_client_info": {
+          "package_name": "example.com.finalexam_expense"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246177436713-ggata7qe9icc5g0282c5edfknkq5iq0c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWhUgaY6hRcimiu8inc80MqMEmZ4Adxkw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
