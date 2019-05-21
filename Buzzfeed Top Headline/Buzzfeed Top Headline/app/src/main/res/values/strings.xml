@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BuzzFeed Headlines</string>
+    <string name="txtHeadline_display">Headline</string>
+    <string name="txtPublishedOn_display">Published on :</string>
+    <string name="txtDesc_display">Description</string>
+    <string name="btnQuit_display">Quit</string>
+    <string name="txtDescription_main_display" />
+    <string name="txtPublishedOn_main">published</string>
+    <string name="txtPB_display">Loading News</string>
+    <string name="img_main">Main Image</string>
+    <string name="img_next">Next Image</string>
+    <string name="img_prev">Previous Image</string>
+</resources>
