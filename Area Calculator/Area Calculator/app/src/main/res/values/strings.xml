@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Area Calculator</string>
+    <string name="bt_clear">Clear</string>
+    <string name="bt_calculate">Calculate</string>
+    <string name="txt_shape">Select a shape</string>
+    <string name="lenght1_display">Lenght 1 :</string>
+    <string name="lenght2_display">Lenght 2 :</string>
+    <string name="shape_display">Select a shape</string>
+    <string name="value_display"></string>
+</resources>
