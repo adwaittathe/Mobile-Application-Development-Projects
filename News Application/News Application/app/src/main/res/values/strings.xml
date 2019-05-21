@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Main Activity</string>
+    <string name="news_title_display">News Title</string>
+    <string name="news_author_display">News Author</string>
+    <string name="news_date_display">News date</string>
+    <string name="txtLoading_dispaly">Loading Sources....</string>
+    <string name="txtLoading_pb_display">Loading Stories....</string>
+</resources>
