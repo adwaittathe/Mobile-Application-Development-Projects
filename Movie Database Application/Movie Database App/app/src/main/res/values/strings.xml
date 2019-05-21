@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">My Favorite Movies</string>
+    <string name="btn_addmovie_display">Add Movie</string>
+    <string name="btnEdit_display">Edit</string>
+    <string name="btnDeleteMovie_display">Delete Movie</string>
+    <string name="btnListByYear_display">Show List by Year</string>
+    <string name="btnShowListbyRating_display">Show List by Rating</string>
+    <string name="txtEditMovieName" />
+    <string name="hint_movieName">Name</string>
+    <string name="Description_display">Description :</string>
+    <string name="txtGenre_display">Genre :</string>
+    <string name="genre_prompt">Select</string>
+    <string name="rating_display">Rating:</string>
+    <string name="edit_year_display" />
+    <string name="hint_year">Year</string>
+    <string name="imdb_displat" />
+    <string name="buttonAddMovieActivity_display">Add Movie</string>
+    <string name="btnSaveChanges_display">Save Changes</string>
+    <string name="movie_sort_title_display">Movies by Year</string>
+
+    <string name="main_movie_title_display">MM</string>
+    <string name="movDesc_display">Description :</string>
+    <string name="txtgenre_display">Genre :</string>
+    <string name="main_genre_display">Genre</string>
+    <string name="txtRating_display">Rating :</string>
+    <string name="main_rating_display"></string>
+    <string name="main_MovieDesc_display">Movie Description</string>
+    <string name="txtYear_display">Year :</string>
+    <string name="main_year_display">Year</string>
+    <string name="txtIMDB_display">IMDB</string>
+    <string name="mainIMDB_display">IMDB</string>
+    <string name="btnFinish">Finish</string>
+    <string name="imgPrev_desc">Previous</string>
+    <string name="imgFirst_desc">First</string>
+    <string name="imgLast_desc">Last</string>
+    <string name="imgNext_desc">Next</string>
+    <string name="txt_movie_title_display">Title :</string>
+    <string name="Movie_title_display">Movies by Rating</string>
+    <string name="ratingProgress_display">R</string>
+    <string name="imdb_hint">IMDB</string>
+    <string name="addmovie_activity">Add Movie</string>
+    <string name="editmovie_activity">Edit Movie</string>
+    <string name="movie_byYear">Moviea by Year</string>
+    <string name="movie_byRating">Movies by Rating</string>
+
+    <string-array name="genre_name">
+        <item><font color="#808080">Select</font></item>
+        <item>Action</item>
+        <item>Animation</item>
+        <item>Comedy</item>
+        <item>Documentary</item>
+        <item>Family</item>
+        <item>Horror</item>
+        <item>Crime</item>
+        <item>Others</item>
+    </string-array>
+</resources>

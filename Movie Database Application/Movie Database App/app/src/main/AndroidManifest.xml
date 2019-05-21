@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="example.com.hw3_group12">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddMovieActivity" android:label="@string/addmovie_activity"/>
+        <activity android:name=".EditMovieActivity" android:label="@string/editmovie_activity"/>
+        <activity android:name=".SortByYearActivity" android:label="@string/movie_byYear">
+            <intent-filter>
+                <action android:name="example.com.hw3_group12.intent.action.SortYear" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SortByRaitngActivity" android:label="@string/movie_byRating">
+            <intent-filter>
+                <action android:name="example.com.hw3_group12.intent.action.SortRating" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+
+
+        </activity>
+    </application>
+
+</manifest>
