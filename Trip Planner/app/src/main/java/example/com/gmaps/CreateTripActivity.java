@@ -291,9 +291,9 @@ public class CreateTripActivity extends AppCompatActivity  implements
     {
 
         mMap.clear();
-        String url="https://maps.googleapis.com/maps/api/place/nearbysearch/json?location="+latLng.latitude+","+latLng.longitude+"&radius=1600&type=restaurant&key=AIzaSyAraRWuZyLViRnXaARsoV2qFAoWkfPNQWs";
+        String url="https://maps.googleapis.com/maps/api/place/nearbysearch/json?location="+latLng.latitude+","+latLng.longitude+"&radius=1600&type=restaurant&key=<API KEY VALUE>";
         final Request request = new Request.Builder()
-                .url("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location="+latLng.latitude+","+latLng.longitude+"&radius=1600&type=restaurant&key=AIzaSyAraRWuZyLViRnXaARsoV2qFAoWkfPNQWs")
+                .url("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location="+latLng.latitude+","+latLng.longitude+"&radius=1600&type=restaurant&key=<API KEY VALUE>")
                 .build();
 
         client.newCall(request).enqueue(new Callback() {
